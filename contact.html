@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact | Siyabonga</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <h2 class="logo">Siyabonga Makhubu</h2>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<section id="contact" class="contact-section">
+
+    <div class="contact-header">
+        <h1 class="gradient-text">Contact Me</h1>
+        <p class="contact-subtitle">
+            Let’s connect and build something amazing together
+        </p>
+    </div>
+
+    <div class="contact-container">
+
+        <form id="contact-form" class="contact-form">
+            <input type="text" name="user_name" id="user_name" placeholder="Your Name" required>
+
+            <input type="email" name="user_email" id="user_email" placeholder="Your Email" required>
+
+            <!-- ✅ TITLE / SUBJECT FIELD -->
+            <input type="text" name="title" id="title" placeholder="Subject / Title" required>
+
+            <textarea name="message" id="message" placeholder="Your Message" rows="5"></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+
+        <!-- OPTIONAL INFO PANEL -->
+        <div class="contact-info">
+
+            <p>
+                <i class="fas fa-envelope"></i> 
+                <a href="mailto:syabongokuhle18@email.com">
+                    syabongokuhle18@email.com
+                </a>
+            </p>
+
+            <p>
+                <i class="fas fa-phone"></i> 
+                <a href="tel:+27 69 121 4796">
+                    +27 69 121 4796
+                </a>
+            </p>
+
+            <p>
+                <i class="fab fa-linkedin"></i> 
+                <a href="https://www.linkedin.com/in/siyabonga-makhubu-053110227" target="_blank">
+                    linkedin.com/in/siyabonga-makhubu-053110227
+                </a>
+            </p>
+
+            <p>
+                <i class="fab fa-github"></i> 
+                <a href="https://github.com/Siyabonga-Makhubu" target="_blank">
+                    github.com/Siyabonga-Makhubu
+                </a>
+            </p>
+
+        </div>
+
+</section>
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+    (function(){
+        emailjs.init({
+        publicKey: "v3G-WGtSnXaqsS0ZP"
+        });
+    })();
+</script>
+</body>
+</html>
