@@ -218,4 +218,12 @@ contactElements.forEach(el=>{
         });
 
     });
+
+    const downloadBtn = document.getElementById("downloadBtn");
+    
+    downloadBtn.addEventListener("click", () => {
+        setTimeout(() => {
+            downloadBtn.innerHTML = "Downloaded ✓";
+        }, 1000);
+    });
     
