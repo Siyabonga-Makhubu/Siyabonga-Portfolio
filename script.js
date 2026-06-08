@@ -220,10 +220,18 @@ contactElements.forEach(el=>{
     });
 
     const downloadBtn = document.getElementById("downloadBtn");
-    
-    downloadBtn.addEventListener("click", () => {
-        setTimeout(() => {
-            downloadBtn.innerHTML = "Downloaded ✓";
-        }, 1000);
+
+    downloadBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        const link = document.createElement("a");
+        link.href = "./Mr-Siyabonga_Makhubu.pdf";
+        link.download = "Siyabonga_Makhubu_CV.pdf";
+
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+
+        downloadBtn.innerHTML = "Downloaded ✓";
     });
     
