@@ -218,15 +218,14 @@ contactElements.forEach(el=>{
         });
 
     });
-
     const downloadBtn = document.getElementById("downloadBtn");
 
     downloadBtn.addEventListener("click", function (e) {
         e.preventDefault();
 
         const link = document.createElement("a");
-        link.href = "./Mr-Siyabonga_Makhubu.pdf";
-        link.download = "Siyabonga_Makhubu_CV.pdf";
+        link.href = "./Mr_Siyabonga_Makhubu.pdf";
+        link.download = "Mr_Siyabonga_Makhubu.pdf";
 
         document.body.appendChild(link);
         link.click();
@@ -234,4 +233,3 @@ contactElements.forEach(el=>{
 
         downloadBtn.innerHTML = "Downloaded ✓";
     });
-    
