@@ -1,4 +1,24 @@
 
+    const sectionsToReveal = document.querySelectorAll("section");
+
+    const sectionRevealObserver = new IntersectionObserver(
+        (entries, observer) => {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) return;
+
+                entry.target.classList.add("is-visible");
+                observer.unobserve(entry.target);
+            });
+        },
+        {
+            threshold: 0
+        }
+    );
+
+    sectionsToReveal.forEach(section => {
+        section.classList.add("section-fade-in");
+        sectionRevealObserver.observe(section);
+    });
 
     const faders = document.querySelectorAll(".fade-in");
 
@@ -131,13 +151,19 @@ contactElements.forEach(el=>{
 });
  document.addEventListener("DOMContentLoaded", () => {
 
-        const texts = [
-            "Full Stack Developer",
-            "Frontend Developer",
-            "Backend Developer",
-            "Problem Solver",
-            "UI/UX Enthusiast"
+       const texts = [
+        "AI Engineer",
+        "Machine Learning Engineer",
+        "AI Application Developer",
+        "Full Stack AI Developer",
+        "Machine Learning Enthusiast",
+        "AI Problem Solver",
+        "Generative AI Specialist",
+        "LLM Developer",
+        "AI Solutions Architect",
+        "AI Innovator"
         ];
+
 
         let textIndex = 0;
         let charIndex = 0;
@@ -174,6 +200,35 @@ contactElements.forEach(el=>{
         }
 
         type();
+
+        const themeToggle = document.getElementById("themeToggle");
+        const rootElement = document.documentElement;
+
+        const updateThemeIcon = (theme) => {
+            const icon = themeToggle.querySelector("i");
+            if (!icon) return;
+            if (theme === "light") {
+                icon.classList.remove("fa-moon");
+                icon.classList.add("fa-sun");
+            } else {
+                icon.classList.remove("fa-sun");
+                icon.classList.add("fa-moon");
+            }
+        };
+
+        const setTheme = (theme) => {
+            rootElement.setAttribute("data-theme", theme);
+            localStorage.setItem("theme", theme);
+            updateThemeIcon(theme);
+        };
+
+        const storedTheme = localStorage.getItem("theme") || "dark";
+        setTheme(storedTheme);
+
+        themeToggle.addEventListener("click", () => {
+            const nextTheme = rootElement.getAttribute("data-theme") === "light" ? "dark" : "light";
+            setTheme(nextTheme);
+        });
     });
      const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
