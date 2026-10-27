@@ -52,6 +52,18 @@ A productivity application for managing daily tasks and personal notes.
 
 A simple calculator that supports basic mathematical operations.
 
+### DStv Customer Support RAG
+
+A grounded FastAPI customer-support RAG implementation based on the MultiChoice architecture. It includes 10 clearly fictional built-in demo records and separate dummy customer data for ingestion and chunk generation; none of the data represents real customers or confirmed commercial policy.
+
+Repository: https://github.com/Siyabonga-Makhubu/Multichoice_RAG
+
+### AI Job Search Assistant
+
+A full-stack job-search and career-preparation platform with a resume RAG backend. It supports resume ingestion and evidence retrieval, job discovery and matching, application assistance, interview preparation, and an MCP server for compatible AI clients.
+
+Repository: https://github.com/Siyabonga-Makhubu/AI_Job_Search_Assistant
+
 ## Live Website
 
 Visit the portfolio here:
