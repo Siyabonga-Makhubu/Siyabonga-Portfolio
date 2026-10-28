@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="320" viewBox="0 0 480 320" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="30" y1="16" x2="444" y2="310" gradientUnits="userSpaceOnUse"><stop stop-color="#16423e"/><stop offset="1" stop-color="#111827"/></linearGradient>
+    <linearGradient id="accent" x1="174" y1="48" x2="307" y2="268" gradientUnits="userSpaceOnUse"><stop stop-color="#5eead4"/><stop offset="1" stop-color="#0f9f8c"/></linearGradient>
+  </defs>
+  <rect width="480" height="320" rx="28" fill="url(#bg)"/>
+  <rect x="163" y="31" width="154" height="258" rx="24" fill="#0c1d20" stroke="#38766f" stroke-width="2.5"/>
+  <rect x="180" y="52" width="120" height="56" rx="12" fill="#172f31"/>
+  <text x="287" y="91" fill="#d1fae5" font-family="Arial,sans-serif" font-size="30" text-anchor="end">1,280</text>
+  <g fill="#203a3b">
+    <rect x="180" y="122" width="25" height="25" rx="8"/><rect x="211" y="122" width="25" height="25" rx="8"/><rect x="242" y="122" width="25" height="25" rx="8"/>
+    <rect x="180" y="156" width="25" height="25" rx="8"/><rect x="211" y="156" width="25" height="25" rx="8"/><rect x="242" y="156" width="25" height="25" rx="8"/>
+    <rect x="180" y="190" width="25" height="25" rx="8"/><rect x="211" y="190" width="25" height="25" rx="8"/><rect x="242" y="190" width="25" height="25" rx="8"/>
+    <rect x="180" y="224" width="25" height="25" rx="8"/><rect x="211" y="224" width="25" height="25" rx="8"/><rect x="242" y="224" width="25" height="25" rx="8"/>
+  </g>
+  <g fill="#b9d1c9" font-family="Arial,sans-serif" font-size="13" text-anchor="middle">
+    <text x="192.5" y="140">7</text><text x="223.5" y="140">8</text><text x="254.5" y="140">9</text>
+    <text x="192.5" y="174">4</text><text x="223.5" y="174">5</text><text x="254.5" y="174">6</text>
+    <text x="192.5" y="208">1</text><text x="223.5" y="208">2</text><text x="254.5" y="208">3</text>
+    <text x="192.5" y="242">C</text><text x="223.5" y="242">0</text>
+  </g>
+  <rect x="275" y="122" width="25" height="127" rx="8" fill="url(#accent)"/>
+  <path d="M287.5 135v13m-6.5-6.5h13M281 169h13M282 204l11-12m-11 0 11 12M282 232h11" stroke="#effefa" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="118" cy="99" r="28" fill="#0e655c" fill-opacity=".42"/><path d="M107 99h22m-11-11v22" stroke="#5eead4" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="362" cy="221" r="31" fill="#0e655c" fill-opacity=".34"/><path d="M350 221h24" stroke="#5eead4" stroke-width="3" stroke-linecap="round"/>
+</svg>

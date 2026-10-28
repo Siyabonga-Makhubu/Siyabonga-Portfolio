@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="320" viewBox="0 0 480 320" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="24" y1="8" x2="455" y2="314" gradientUnits="userSpaceOnUse"><stop stop-color="#27314f"/><stop offset="1" stop-color="#141827"/></linearGradient>
+    <linearGradient id="accent" x1="105" y1="60" x2="372" y2="262" gradientUnits="userSpaceOnUse"><stop stop-color="#c4b5fd"/><stop offset="1" stop-color="#8b5cf6"/></linearGradient>
+  </defs>
+  <rect width="480" height="320" rx="28" fill="url(#bg)"/>
+  <rect x="93" y="38" width="294" height="244" rx="20" fill="#111a2b" stroke="#4b426e" stroke-width="2"/>
+  <rect x="119" y="66" width="132" height="12" rx="6" fill="#f3efff"/>
+  <rect x="119" y="87" width="95" height="7" rx="3.5" fill="#958eab"/>
+  <circle cx="138" cy="126" r="11" fill="url(#accent)"/><path d="m133 126 4 4 7-8" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M162 126h185" stroke="#81799a" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="138" cy="169" r="11" fill="url(#accent)"/><path d="m133 169 4 4 7-8" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M162 169h154" stroke="#81799a" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="138" cy="212" r="11" stroke="#8979b8" stroke-width="2.5"/><path d="M162 212h177" stroke="#e0dcf0" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="138" cy="251" r="11" stroke="#8979b8" stroke-width="2.5"/><path d="M162 251h116" stroke="#e0dcf0" stroke-width="6" stroke-linecap="round"/>
+  <rect x="327" y="54" width="39" height="39" rx="12" fill="#352858"/><path d="M346 64v19m-9-9h19" stroke="#c4b5fd" stroke-width="3" stroke-linecap="round"/>
+</svg>

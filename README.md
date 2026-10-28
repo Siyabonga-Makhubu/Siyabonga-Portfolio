@@ -15,6 +15,7 @@ The portfolio serves as a central platform where recruiters, employers, and coll
 * Education timeline
 * Professional certifications
 * Project portfolio with GitHub links
+* Responsive project cards with project-specific thumbnails and accessible image fallbacks
 * Professional experience section
 * Contact form integration
 * Social media links

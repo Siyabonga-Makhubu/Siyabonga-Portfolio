@@ -117,6 +117,26 @@ const educationObserver = new IntersectionObserver((entries) => {
 timelineItems.forEach(item => {
     educationObserver.observe(item);
 });
+document.querySelectorAll(".project-image").forEach((image) => {
+    const showFallback = () => {
+        const fallback = image.parentElement.querySelector(".project-image-fallback");
+
+        if (!fallback) {
+            console.error("Project image is missing its fallback element:", image.src);
+            return;
+        }
+
+        image.hidden = true;
+        fallback.hidden = false;
+    };
+
+    image.addEventListener("error", showFallback);
+
+    if (image.complete && image.naturalWidth === 0) {
+        showFallback();
+    }
+});
+
 const projectCards = document.querySelectorAll(".project-card");
 
 const projectObserver = new IntersectionObserver((entries) => {
@@ -279,8 +299,8 @@ contactElements.forEach(el=>{
         e.preventDefault();
 
         const link = document.createElement("a");
-        link.href = "./Mr_Siyabonga_Makhubu.pdf";
-        link.download = "Mr_Siyabonga_Makhubu.pdf";
+        link.href = "./Siyabonga_Makhubu_CV.pdf";
+        link.download = "Siyabonga_Makhubu_CV.pdf";
 
         document.body.appendChild(link);
         link.click();
